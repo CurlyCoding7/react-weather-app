@@ -1,0 +1,67 @@
+.forcast {
+  background-color: blue;
+  min-width: 60%;
+  /* min-height: 1vmax; */
+  border-radius: 5px;
+  padding: 1rem;
+  color: white;
+}
+
+.forcast > h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 900;
+}
+
+.forcast img {
+  width: 8rem;
+  height: 8rem;
+  margin-bottom: 0.5rem;
+  margin-top: -2rem;
+}
+
+.img-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.img-box > span {
+  font-weight: 600;
+}
+
+.forcast-box {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  /* flex-wrap: wrap; */
+}
+
+.weather-data {
+  display: flex;
+  flex-direction: column;
+}
+
+.weather-data > span {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+@media screen and (max-width: 600px) {
+  .forcast {
+    width: 100%;
+  }
+  .forcast-box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+  .forcast {
+    width: 40%;
+  }
+}
